@@ -1,0 +1,163 @@
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+/* HEADER */
+.header {
+  background: #222;
+  color: #fff;
+  padding: 18px;
+  text-align: center;
+}
+
+.logo img {
+  height: 70px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 10px;
+  font-weight: bold;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background: #ff9900;
+  border-radius: 4px;
+}
+
+/* HERO */
+.hero {
+  background: url('images/tshirt1.jpg') center/cover no-repeat;
+  padding: 120px 20px;
+  color: white;
+  text-align: center;
+}
+
+.hero-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #ff9900;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* PRODUCT GRID */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.product-card {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.product-card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* crops and fills the box without distortion */
+  border-radius: 4px;
+}
+
+
+.price {
+  color: #ff6f00;
+  font-weight: bold;
+}
+
+/* CONTACT */
+.contact-page {
+  padding: 40px;
+  text-align: center;
+}
+
+.contact-box {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin: 20px auto;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+/* FOOTER */
+.footer {
+  background: #222;
+  text-align: center;
+  color: white;
+  padding: 15px;
+  margin-top: 30px;
+}
+/* CART POPUP */
+.cart-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: 2px solid #ff9900;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.cart-popup p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.cart-popup .popup-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  background: #ff9900;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart-popup .popup-buttons button:hover {
+  background: #e68a00;
+}
+#place-order-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #28a745; /* Green */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#place-order-btn:hover {
+  background: #218838;
+}
